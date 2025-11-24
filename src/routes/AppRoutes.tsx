@@ -6,6 +6,7 @@ import LoanPage from "@/modules/dashboard/pages/LoanPage";
 import PaymentsPage from "@/modules/dashboard/pages/PaymentsPage";
 import DocumentsPage from "@/modules/dashboard/pages/DocumentsPage";
 import { RiskDashboard } from "@modules/operator-dashboard/risk";
+import LoanForm from "../pages/loan/LoanForm";
 
 const AppRoutes = () => {
   return (
@@ -26,6 +27,11 @@ const AppRoutes = () => {
       <Route path="/dashboard/payments" element={<PaymentsPage />} />
       <Route path="/dashboard/documents" element={<DocumentsPage />} />
       <Route path="/risk" element={<RiskDashboard />} />
+
+      {/* Fallback */}
+      <Route path="*" element={<Navigate to="/" replace />} />
+      {/* NEW — Loan Demo Form */}
+      <Route path="/loan-form" element={<LoanForm />} />
 
       {/* Fallback */}
       <Route path="*" element={<Navigate to="/" replace />} />
