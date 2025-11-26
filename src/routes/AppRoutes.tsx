@@ -1,17 +1,14 @@
-import { AuditDashboard } from "@/modules/admin-audit/AuditDashboard";
 import DashboardPage from "@/modules/dashboard/pages/DashboardPage";
 import DocumentsPage from "@/modules/dashboard/pages/DocumentsPage";
 import LoanPage from "@/modules/dashboard/pages/LoanPage";
 import PaymentsPage from "@/modules/dashboard/pages/PaymentsPage";
-import DocumentsPage from "@/modules/dashboard/pages/DocumentsPage";
-import { RiskDashboard } from "@modules/operator-dashboard/risk";
+import OnboardingPage from "@/modules/onboarding/pages/OnboardingPage";
+import SuccessPage from "@/modules/onboarding/pages/SuccessPage";
 import { PolicyEnginePage } from "@/modules/scoring";
 import OperatorDashboardLayout from "@/modules/operator-dashboard/layout/OperatorDashboardLayout";
 import OperatorDashboardPage from "@/modules/operator-dashboard/pages/OperatorDasboardPage";
 import RiskPage from "@/modules/operator-dashboard/pages/RiskPage";
-import LoanForm from "@/pages/loan/LoanForm";
-// import PolicyEnginePage from "@/modules/policy-engine/PolicyEnginePage";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 
 const AppRoutes = () => {
   return (
